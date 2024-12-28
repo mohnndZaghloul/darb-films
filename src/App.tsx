@@ -10,7 +10,7 @@ import Footer from "./components/templates/Footer";
 
 function App() {
   return (
-    <main className="bg-black text-white font-light">
+    <main dir="rtl" className="bg-black text-white font-light">
       <Nav />
       <Hero />
       <Area />
