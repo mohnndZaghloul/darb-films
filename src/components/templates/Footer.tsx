@@ -96,7 +96,7 @@ const Footer = () => {
             <li className="hover:scale-110 transition">
               <a href="#">
                 <img
-                  className="bg-white w-7 p-1 rounded-full"
+                  className="bg-white w-[25px] p-1 rounded-full"
                   src={x}
                   alt="x"
                 />
