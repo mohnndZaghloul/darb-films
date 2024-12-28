@@ -23,20 +23,24 @@ const Footer = () => {
           <ul className="space-y-1">
             <li>
               <a
-                className="relative group flex items-center gap-3 w-fit py-1"
+                className="relative group flex items-center gap-3 w-fit"
                 href="#">
                 <IoIosArrowBack />
-                {t("ourServices")}
-                <span className="absolute bottom-0 start-0 h-[1px] w-full bg-white scale-0 group-hover:scale-100 transition"></span>
+                <span className="relative group py-1">
+                  {t("ourServices")}
+                  <span className="absolute bottom-0 start-0 h-[1px] w-full bg-white scale-0 group-hover:scale-100 transition"></span>
+                </span>
               </a>
             </li>
             <li>
               <a
-                className="relative group flex items-center gap-3 w-fit py-1"
+                className="relative group flex items-center gap-3 w-fit"
                 href="#">
                 <IoIosArrowBack />
-                {t("about")}
-                <span className="absolute bottom-0 start-0 h-[1px] w-full bg-white scale-0 group-hover:scale-100 transition"></span>
+                <span className="relative group py-1">
+                  {t("about")}
+                  <span className="absolute bottom-0 start-0 h-[1px] w-full bg-white scale-0 group-hover:scale-100 transition"></span>
+                </span>
               </a>
             </li>
           </ul>
