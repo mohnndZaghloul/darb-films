@@ -1,10 +1,10 @@
 //hero images
-import hero from "../assets/hero/hero.svg";
-import icon1 from "../assets/hero/Group 40.svg";
-import icon2 from "../assets/hero/Group 41.svg";
-import icon3 from "../assets/hero/Group 42.svg";
-import icon4 from "../assets/hero/Group 43.svg";
-import icon5 from "../assets/hero/Group 44.svg";
+import hero from "../assets/hero/hero.png";
+import icon1 from "../assets/hero/Group 40.png";
+import icon2 from "../assets/hero/Group 41.png";
+import icon3 from "../assets/hero/Group 42.png";
+import icon4 from "../assets/hero/Group 43.png";
+import icon5 from "../assets/hero/Group 44.png";
 
 //area images
 import AreaImg1 from "../assets/area/Rectangle 12.jpg";
