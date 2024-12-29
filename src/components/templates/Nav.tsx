@@ -14,7 +14,6 @@ const Nav = () => {
     cookies.get("i18next") || "ar"
   );
   useEffect(() => {
-    console.log(currentLang);
     i18next.changeLanguage(currentLang);
     window.document.dir = i18n.dir();
   }, [currentLang]);
