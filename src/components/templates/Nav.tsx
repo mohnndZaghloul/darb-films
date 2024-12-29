@@ -28,25 +28,29 @@ const Nav = () => {
           </a>
           <div>
             <ul className="hidden md:flex justify-between items-center capitalize text-lg font-light">
-              <li>
+              <li className="relative group">
+                <span className="absolute bottom-0 left-0 w-full h-[1px] scale-0 group-hover:scale-100 bg-white transition"></span>
                 <a href="#">{t("home")}</a>
               </li>
               <li>
                 <span className="w-[1px] h-4 block mx-3 bg-white"></span>
               </li>
-              <li>
+              <li className="relative group">
+                <span className="absolute bottom-0 left-0 w-full h-[1px] scale-0 group-hover:scale-100 bg-white transition"></span>
                 <a href="#services">{t("services")}</a>
               </li>
               <li>
                 <span className="w-[1px] h-4 block mx-3 bg-white"></span>
               </li>
-              <li>
+              <li className="relative group">
+                <span className="absolute bottom-0 left-0 w-full h-[1px] scale-0 group-hover:scale-100 bg-white transition"></span>
                 <a href="#contact">{t("contact")}</a>
               </li>
               <li>
                 <span className="w-[1px] h-4 block mx-3 bg-white"></span>
               </li>
-              <li>
+              <li className="relative group">
+                <span className="absolute bottom-0 left-0 w-full h-[1px] scale-0 group-hover:scale-100 bg-white transition"></span>
                 <button
                   className="flex justify-center items-center gap-2"
                   onClick={() => {
