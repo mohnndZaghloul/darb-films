@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc -b && vite build && cp -R locales dist/locales",
+    "build": "tsc -b && vite build && cp -R locale dist/locale",
     "lint": "eslint .",
     "preview": "vite preview"
   },
