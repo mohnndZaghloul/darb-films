@@ -20,7 +20,7 @@ const Nav = () => {
 
   return (
     <header>
-      <nav className="py-4 border-b-[2px] border-[#323232]">
+      <nav className="max-h-[100px] py-4 border-b-[2px] border-[#323232]">
         <div className="container flex justify-between items-center">
           <a href="#" className="flex items-center capitalize gap-2">
             <img src={logo} alt="darb filmes logo" />
