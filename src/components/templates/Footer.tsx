@@ -136,7 +136,7 @@ const Footer = () => {
             <div className="overflow-hidden w-3/4 lg:w-2/3 2xl:w-1/2 mx-auto relative rounded-full my-2">
               <a
                 target="_blank"
-                href={`mailto:Hello@darbproductions.com&subject=from web site&body=${email}`}
+                href={`mailto:Hello@darbproductions.com&subject=website&body=${email}`}
                 className="absolute top-1/2 -translate-y-1/2 left-0 h-full w-16 rounded-full hover:scale-110 transition">
                 <IoIosArrowBack className="rotate-180 text-black bg-[#b6b6b6] w-full h-full p-2 rounded-full" />
               </a>
