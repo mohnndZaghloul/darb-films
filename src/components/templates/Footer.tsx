@@ -151,6 +151,10 @@ const Footer = () => {
           </div>
         </div>
       </div>
+      <div className="text-black flex gap-4 px-10 py-2 bg-[#f2f2f2] font-medium">
+        <p>الحقوق محفوظة</p>
+        <p>2024 درب برودكشنز</p>
+      </div>
     </footer>
   );
 };
