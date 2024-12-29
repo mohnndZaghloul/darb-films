@@ -17,11 +17,7 @@ const Hero = () => {
     <section
       dir="rtl"
       className="overflow-hidden container flex flex-col-reverse sm:flex-row justify-center items-center py-10">
-      <motion.div
-        initial={{ x: "50%", opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1 }}
-        transition={{ duration: 1 }}
-        className="sm:w-[45%] max-w-[470px] capitalize">
+      <div className="sm:w-[45%] max-w-[470px] capitalize">
         <h1 className="text-5xl font-bold">{t("darbFilms")}</h1>
         <p className="text-2xl leading-10 py-4">{t("heroText")}</p>
         <div className="flex text-lg font-bold items-center gap-4">
@@ -40,7 +36,7 @@ const Hero = () => {
             {t("ourServices")}
           </motion.a>
         </div>
-      </motion.div>
+      </div>
       <motion.div
         initial={{ scale: 0, opacity: 0 }}
         whileInView={{
@@ -50,11 +46,7 @@ const Hero = () => {
         }}
         className="bg-white bg-opacity-20 w-1/4 h-1/4 absolute rounded-full blur-3xl top-20 end-0"
       />
-      <motion.div
-        initial={{ x: "-50%", opacity: 0 }}
-        whileInView={{ x: 0, opacity: 1 }}
-        transition={{ duration: 1 }}
-        className="relative w-[90%] md:w-[55%]">
+      <div className="relative w-[90%] md:w-[55%]">
         <HeroIcon
           icon={icon1}
           position="left-[10%] top-1/4"
@@ -82,7 +74,7 @@ const Hero = () => {
         />
         <img src={hero} alt="hero image" />
         <span className="absolute bottom-0 w-full h-[30%] bg-gradient-to-t from-black"></span>
-      </motion.div>
+      </div>
     </section>
   );
 };
