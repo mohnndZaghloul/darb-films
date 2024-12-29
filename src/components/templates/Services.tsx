@@ -5,15 +5,17 @@ import img4 from "../../assets/services/Group (1).svg";
 import img5 from "../../assets/services/Layer_x0020_1_1_.svg";
 import li from "../../assets/services/li.svg";
 import { motion } from "framer-motion";
+import { useTranslation } from "react-i18next";
 
 const Services = () => {
+  const { t } = useTranslation();
+
   return (
-    <section className="text-center py-20 border-y-[2px] border-y-[#323232]">
-      <h1 className="text-6xl font-bold">خدماتنا</h1>
-      <p className="text-3xl my-4 pb-10">
-        بخبراتنا المتراكمة في الانتاج الاعلامي نضمن لكم تجربة سلسلة ونتائج عالية
-        الجودة
-      </p>
+    <section
+      id="services"
+      className="text-center py-20 border-y-[2px] border-y-[#323232]">
+      <h1 className="text-6xl font-bold">{t("ourServices")}</h1>
+      <p className="text-3xl my-4 pb-10">{t("servicesHeader")} </p>
       <div className="container grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
         <div className="relative mx-auto w-full overflow-hidden flex flex-col items-center text-start rounded-[1.25rem] border border-white h-full lg:max-w-[17rem] xl:aspect-[213/349] px-5 py-6">
           <motion.div
@@ -31,27 +33,27 @@ const Services = () => {
           <div>
             <img src={img2} alt="img" />
           </div>
-          <h1 className="font-bold text-lg my-5">التصوير الفوتوغرافي</h1>
+          <h1 className="font-bold text-lg my-5">{t("photography")}</h1>
           <ul className="h-full space-y-5 mt-6">
             <li className="flex items-start gap-x-2">
               <img className="w-4 h-4" src={li} alt="li point" />
-              التصوير الفوتوغرافي للإعلانات التجارية
+              {t("photographyLi1")}
             </li>
             <li className="flex items-start gap-x-2">
               <img className="w-4 h-4" src={li} alt="li point" />
-              تصوير البورترية
+              {t("photographyLi2")}
             </li>
             <li className="flex items-start gap-x-2">
               <img className="w-4 h-4" src={li} alt="li point" />
-              تصوير فعاليات الشركات
+              {t("photographyLi3")}
             </li>
             <li className="flex items-start gap-x-2">
               <img className="w-4 h-4" src={li} alt="li point" />
-              التصوير المعماري
+              {t("photographyLi4")}
             </li>
             <li className="flex items-start gap-x-2">
               <img className="w-4 h-4" src={li} alt="li point" />
-              التصوير المنتجات
+              {t("photographyLi5")}
             </li>
           </ul>
         </div>
@@ -71,27 +73,27 @@ const Services = () => {
           <div>
             <img src={img1} alt="img" />
           </div>
-          <h1 className="font-semibold text-lg my-5">تصوير الفيديو </h1>
+          <h1 className="font-semibold text-lg my-5">{t("videography")} </h1>
           <ul className="h-full space-y-5 mt-6">
             <li className="flex items-start gap-x-2">
               <img className="w-4 h-4" src={li} alt="li point" />
-              انتاج الاعلانات التجارية
+              {t("videographyLi1")}
             </li>
             <li className="flex items-start gap-x-2">
               <img className="w-4 h-4" src={li} alt="li point" />
-              تصوير البودكاست
+              {t("videographyLi2")}
             </li>
             <li className="flex items-start gap-x-2">
               <img className="w-4 h-4" src={li} alt="li point" />
-              تصوير المقابلات
+              {t("videographyLi3")}
             </li>
             <li className="flex items-start gap-x-2">
               <img className="w-4 h-4" src={li} alt="li point" />
-              انتاج وثائقيات الشركات
+              {t("videographyLi4")}
             </li>
             <li className="flex items-start gap-x-2">
               <img className="w-4 h-4" src={li} alt="li point" />
-              إدارة الفعاليات
+              {t("videographyLi5")}
             </li>
           </ul>
         </div>
@@ -112,20 +114,20 @@ const Services = () => {
             <img src={img3} alt="img" />
           </div>
           <h1 className="font-semibold text-lg my-5">
-            المونتاج والخدع البصرية
+            {t("editingAndVisual")}
           </h1>
           <ul className="h-full space-y-5 mt-6">
             <li className="flex items-start gap-x-2">
               <img className="w-4 h-4" src={li} alt="li point" />
-              مونتاج الفيديو
+              {t("editingLi1")}
             </li>
             <li className="flex items-start gap-x-2">
               <img className="w-4 h-4" src={li} alt="li point" />
-              التلوين
+              {t("editingLi2")}
             </li>
             <li className="flex items-start gap-x-2">
               <img className="w-4 h-4" src={li} alt="li point" />
-              الخدع البصرية VFX
+              {t("editingLi3")}
             </li>
           </ul>
         </div>
@@ -145,15 +147,17 @@ const Services = () => {
           <div>
             <img src={img4} alt="img" />
           </div>
-          <h1 className="font-semibold text-lg my-5">التصوير الجوي</h1>
+          <h1 className="font-semibold text-lg my-5">
+            {t("aerialPhotography")}
+          </h1>
           <ul className="h-full space-y-5 mt-6">
             <li className="flex items-start gap-x-2">
               <img className="w-4 h-4" src={li} alt="li point" />
-              تصوير المشاريع العقارية
+              {t("aerialLi1")}
             </li>
             <li className="flex items-start gap-x-2">
               <img className="w-4 h-4" src={li} alt="li point" />
-              التصوير الفوتوغرافي الجوي
+              {t("aerialLi2")}
             </li>
           </ul>
         </div>
@@ -173,15 +177,15 @@ const Services = () => {
           <div>
             <img src={img5} alt="img" />
           </div>
-          <h1 className="font-semibold text-lg my-5">البث المباشر</h1>
+          <h1 className="font-semibold text-lg my-5">{t("liveBroadcast")}</h1>
           <ul className="h-full space-y-5 mt-6">
             <li className="flex items-start gap-x-2">
               <img className="w-4 h-4" src={li} alt="li point" />
-              البث المباشر عبر مواقع التواصل الاجتماعي
+              {t("broadcastLi1")}
             </li>
             <li className="flex items-start gap-x-2">
               <img className="w-4 h-4" src={li} alt="li point" />
-              البث المباشر عبر الأقمار الصناعية
+              {t("broadcastLi2")}
             </li>
           </ul>
         </div>

@@ -23,10 +23,10 @@ const Nav = () => {
     <header>
       <nav className="py-4 border-b-[2px] border-[#323232]">
         <div className="container flex justify-between items-center">
-          <div className="flex items-center capitalize gap-2">
+          <a href="#" className="flex items-center capitalize gap-2">
             <img src={logo} alt="darb filmes logo" />
             <img src={logoTitle} alt="darb filmes" />
-          </div>
+          </a>
           <div>
             <ul className="hidden md:flex justify-between items-center capitalize text-lg font-light">
               <li>
@@ -36,13 +36,13 @@ const Nav = () => {
                 <span className="w-[1px] h-4 block mx-3 bg-white"></span>
               </li>
               <li>
-                <a href="#">{t("services")}</a>
+                <a href="#services">{t("services")}</a>
               </li>
               <li>
                 <span className="w-[1px] h-4 block mx-3 bg-white"></span>
               </li>
               <li>
-                <a href="#">{t("contact")}</a>
+                <a href="#contact">{t("contact")}</a>
               </li>
               <li>
                 <span className="w-[1px] h-4 block mx-3 bg-white"></span>

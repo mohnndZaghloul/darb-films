@@ -1,3 +1,4 @@
+import { useTranslation } from "react-i18next";
 import {
   AreaImg1,
   AreaImg2,
@@ -14,11 +15,11 @@ import {
 } from "../../constants/images";
 
 const Area = () => {
+  const { t } = useTranslation();
+
   return (
     <section className="text-center my-28">
-      <h1 className="text-4xl my-20">
-        نفخر بثقة كبرى العلامات التجارية في المنطقة
-      </h1>
+      <h1 className="text-4xl my-20">{t("areaHeader")} </h1>
       <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-6">
         <div>
           <img className="w-full" src={AreaImg1} alt="area" />
