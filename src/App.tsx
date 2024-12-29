@@ -1,6 +1,5 @@
 import "./App.css";
 import Nav from "./components/templates/Nav";
-import "./i18n";
 
 import Area from "./components/templates/Area";
 import Services from "./components/templates/Services";
