@@ -9,7 +9,7 @@ i18n
   .use(HttpApi)
   .init({
     debug: true,
-    fallbackLng: "en",
+    fallbackLng: "ar",
     detection: {
       order: [
         "cookie",
