@@ -5,7 +5,6 @@ import {
   enLogo,
   emarat,
   facebook,
-  footerlogo,
   insta,
   linked,
   saudi,
