@@ -23,8 +23,8 @@ const Nav = () => {
       <nav className="max-h-[100px] py-4 border-b-[2px] border-[#323232]">
         <div className="container flex justify-between items-center">
           <a href="#" className="flex items-center capitalize gap-2">
-            <img src={logo} alt="darb filmes logo" />
-            <img src={logoTitle} alt="darb filmes" />
+            <img className="h-16 md:h-fit" src={logo} alt="darb filmes logo" />
+            <img className="h-10 md:h-fit" src={logoTitle} alt="darb filmes" />
           </a>
           <div>
             <ul className="hidden md:flex justify-between items-center capitalize text-lg font-light">

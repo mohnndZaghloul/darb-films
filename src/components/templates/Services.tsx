@@ -31,10 +31,10 @@ const Services = () => {
             className="absolute top-0 left-1/2 w-1/3 aspect-square bg-[#fdc966] bg-opacity-50 sm:bg-opacity-100 blur-3xl rounded-full"
           />
           <div>
-            <img src={img2} alt="img" />
+            <img src={img5} alt="img" />
           </div>
           <h1 className="font-bold text-lg my-5">{t("photography")}</h1>
-          <ul className="h-full space-y-5 mt-6">
+          <ul className="h-full w-full space-y-5 mt-6">
             <li className="flex items-start gap-x-2">
               <img className="w-4 h-4" src={li} alt="li point" />
               {t("photographyLi1")}
@@ -71,10 +71,10 @@ const Services = () => {
             className="absolute top-0 left-1/2 w-1/3 aspect-square bg-[#fdc966] bg-opacity-50 sm:bg-opacity-100 sm:opacity-100 blur-3xl rounded-full"
           />
           <div>
-            <img src={img1} alt="img" />
+            <img src={img2} alt="img" />
           </div>
-          <h1 className="font-semibold text-lg my-5">{t("videography")} </h1>
-          <ul className="h-full space-y-5 mt-6">
+          <h1 className="font-bold text-lg my-5">{t("videography")} </h1>
+          <ul className="h-full w-full space-y-5 mt-6">
             <li className="flex items-start gap-x-2">
               <img className="w-4 h-4" src={li} alt="li point" />
               {t("videographyLi1")}
@@ -113,10 +113,10 @@ const Services = () => {
           <div>
             <img src={img3} alt="img" />
           </div>
-          <h1 className="font-semibold text-lg my-5">
+          <h1 className="font-bold text-lg my-5">
             {t("editingAndVisual")}
           </h1>
-          <ul className="h-full space-y-5 mt-6">
+          <ul className="h-full w-full space-y-5 mt-6">
             <li className="flex items-start gap-x-2">
               <img className="w-4 h-4" src={li} alt="li point" />
               {t("editingLi1")}
@@ -147,10 +147,10 @@ const Services = () => {
           <div>
             <img src={img4} alt="img" />
           </div>
-          <h1 className="font-semibold text-lg my-5">
+          <h1 className="font-bold text-lg my-5">
             {t("aerialPhotography")}
           </h1>
-          <ul className="h-full space-y-5 mt-6">
+          <ul className="h-full w-full space-y-5 mt-6">
             <li className="flex items-start gap-x-2">
               <img className="w-4 h-4" src={li} alt="li point" />
               {t("aerialLi1")}
@@ -175,10 +175,10 @@ const Services = () => {
             className="absolute top-0 left-1/2 w-1/3 aspect-square bg-[#fdc966] bg-opacity-50 sm:bg-opacity-100 sm:opacity-100 blur-3xl rounded-full"
           />
           <div>
-            <img src={img5} alt="img" />
+            <img src={img1} alt="img" />
           </div>
-          <h1 className="font-semibold text-lg my-5">{t("liveBroadcast")}</h1>
-          <ul className="h-full space-y-5 mt-6">
+          <h1 className="font-bold text-lg my-5">{t("liveBroadcast")}</h1>
+          <ul className="h-full w-full space-y-5 mt-6">
             <li className="flex items-start gap-x-2">
               <img className="w-4 h-4" src={li} alt="li point" />
               {t("broadcastLi1")}
