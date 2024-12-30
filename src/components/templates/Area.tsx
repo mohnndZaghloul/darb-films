@@ -1,18 +1,20 @@
 import { useTranslation } from "react-i18next";
-import {
-  AreaImg1,
-  AreaImg2,
-  AreaImg3,
-  AreaImg4,
-  AreaImg5,
-  AreaImg6,
-  AreaImg7,
-  AreaImg8,
-  AreaImg9,
-  AreaImg10,
-  AreaImg11,
-  AreaImg12,
-} from "../../constants/images";
+import VideoComponent from "../ui/VideoComponent";
+
+const videos = [
+  "https://vimeo.com/682332585",
+  "https://vimeo.com/682332427",
+  "https://vimeo.com/manage/videos/587933499",
+  "https://vimeo.com/manage/videos/713308855",
+  "https://vimeo.com/383758022",
+  "https://vimeo.com/manage/videos/778239939",
+  "https://vimeo.com/532827819",
+  "https://vimeo.com/478491757",
+  "https://vimeo.com/478496462",
+  "https://vimeo.com/379438132",
+  "https://vimeo.com/379438311",
+  "https://vimeo.com/778240217",
+];
 
 const Area = () => {
   const { t } = useTranslation();
@@ -20,43 +22,10 @@ const Area = () => {
   return (
     <section className="text-center my-28">
       <h1 className="text-4xl my-20">{t("areaHeader")} </h1>
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-6">
-        <div>
-          <img className="w-full" src={AreaImg1} alt="area" />
-        </div>
-        <div>
-          <img className="w-full" src={AreaImg2} alt="area" />
-        </div>
-        <div>
-          <img className="w-full" src={AreaImg3} alt="area" />
-        </div>
-        <div>
-          <img className="w-full" src={AreaImg4} alt="area" />
-        </div>
-        <div>
-          <img className="w-full" src={AreaImg5} alt="area" />
-        </div>
-        <div>
-          <img className="w-full" src={AreaImg6} alt="area" />
-        </div>
-        <div>
-          <img className="w-full" src={AreaImg7} alt="area" />
-        </div>
-        <div>
-          <img className="w-full" src={AreaImg8} alt="area" />
-        </div>
-        <div>
-          <img className="w-full" src={AreaImg9} alt="area" />
-        </div>
-        <div>
-          <img className="w-full" src={AreaImg10} alt="area" />
-        </div>
-        <div>
-          <img className="w-full" src={AreaImg11} alt="area" />
-        </div>
-        <div>
-          <img className="w-full" src={AreaImg12} alt="area" />
-        </div>
+      <div className="relative grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-6">
+        {videos.map((link, index) => (
+          <VideoComponent key={index} URL={link} />
+        ))}
       </div>
     </section>
   );
