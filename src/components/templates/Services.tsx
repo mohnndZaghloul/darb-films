@@ -16,8 +16,8 @@ const Services = () => {
       className="text-center py-20 border-y-[2px] border-y-[#323232]">
       <h1 className="text-6xl font-bold">{t("ourServices")}</h1>
       <p className="text-3xl my-4 pb-10">{t("servicesHeader")} </p>
-      <div className="container grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-        <div className="relative mx-auto w-full overflow-hidden flex flex-col items-center text-start rounded-[1.25rem] border border-white h-full lg:max-w-[17rem] xl:aspect-[213/349] px-5 py-6">
+      <div className="px-10 2xl:container grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
+        <div className="relative mx-auto w-full overflow-hidden flex flex-col items-center text-start rounded-[1.25rem] border border-white h-full lg:max-w-[18rem] xl:aspect-[213/349] px-5 py-6">
           <motion.div
             initial={{ scaleX: 0, x: "-50%" }}
             whileInView={{ scaleX: 1 }}
@@ -28,13 +28,15 @@ const Services = () => {
             initial={{ opacity: 0, x: "-50%", y: "-50%" }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="absolute top-0 left-1/2 w-1/3 aspect-square bg-[#fdc966] bg-opacity-50 sm:bg-opacity-100 blur-3xl rounded-full"
+            className="absolute top-0 left-1/2 w-1/3 aspect-square bg-[#fdc966] bg-opacity-40 sm:bg-opacity-60 md:bg-opacity-90 lg:bg-opacity-100 blur-3xl rounded-full"
           />
           <div>
             <img src={img5} alt="img" />
           </div>
-          <h1 className="font-bold text-lg my-5">{t("photography")}</h1>
-          <ul className="h-full w-full space-y-5 mt-6">
+          <h1 className="font-bold text-lg sm:text-base text-center my-5">
+            {t("photography")}
+          </h1>
+          <ul className="h-full w-full sm:text-sm space-y-5 mt-6">
             <li className="flex items-start gap-x-2">
               <img className="w-4 h-4" src={li} alt="li point" />
               {t("photographyLi1")}
@@ -57,7 +59,7 @@ const Services = () => {
             </li>
           </ul>
         </div>
-        <div className="relative mx-auto w-full overflow-hidden flex flex-col items-center text-start rounded-[1.25rem] border border-white h-full lg:max-w-[17rem] xl:aspect-[213/349] px-5 py-6">
+        <div className="relative mx-auto w-full overflow-hidden flex flex-col items-center text-start rounded-[1.25rem] border border-white h-full lg:max-w-[18rem] xl:aspect-[213/349] px-5 py-6">
           <motion.div
             initial={{ scaleX: 0, x: "-50%" }}
             whileInView={{ scaleX: 1 }}
@@ -68,13 +70,15 @@ const Services = () => {
             initial={{ opacity: 0, x: "-50%", y: "-50%" }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="absolute top-0 left-1/2 w-1/3 aspect-square bg-[#fdc966] bg-opacity-50 sm:bg-opacity-100 sm:opacity-100 blur-3xl rounded-full"
+            className="absolute top-0 left-1/2 w-1/3 aspect-square bg-[#fdc966] bg-opacity-40 sm:bg-opacity-60 md:bg-opacity-90 lg:bg-opacity-100 sm:opacity-100 blur-3xl rounded-full"
           />
           <div>
             <img src={img2} alt="img" />
           </div>
-          <h1 className="font-bold text-lg my-5">{t("videography")} </h1>
-          <ul className="h-full w-full space-y-5 mt-6">
+          <h1 className="font-bold text-lg sm:text-base text-center my-5">
+            {t("videography")}{" "}
+          </h1>
+          <ul className="h-full w-full sm:text-sm space-y-5 mt-6">
             <li className="flex items-start gap-x-2">
               <img className="w-4 h-4" src={li} alt="li point" />
               {t("videographyLi1")}
@@ -97,7 +101,7 @@ const Services = () => {
             </li>
           </ul>
         </div>
-        <div className="relative mx-auto w-full overflow-hidden flex flex-col items-center text-start rounded-[1.25rem] border border-white h-full lg:max-w-[17rem] xl:aspect-[213/349] px-5 py-6">
+        <div className="relative mx-auto w-full overflow-hidden flex flex-col items-center text-start rounded-[1.25rem] border border-white h-full lg:max-w-[18rem] xl:aspect-[213/349] px-5 py-6">
           <motion.div
             initial={{ scaleX: 0, x: "-50%" }}
             whileInView={{ scaleX: 1 }}
@@ -108,15 +112,15 @@ const Services = () => {
             initial={{ opacity: 0, x: "-50%", y: "-50%" }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="absolute top-0 left-1/2 w-1/3 aspect-square bg-[#fdc966] bg-opacity-50 sm:bg-opacity-100 sm:opacity-100 blur-3xl rounded-full"
+            className="absolute top-0 left-1/2 w-1/3 aspect-square bg-[#fdc966] bg-opacity-40 sm:bg-opacity-60 md:bg-opacity-90 lg:bg-opacity-100 sm:opacity-100 blur-3xl rounded-full"
           />
           <div>
             <img src={img3} alt="img" />
           </div>
-          <h1 className="font-bold text-lg my-5">
+          <h1 className="font-bold text-lg sm:text-base text-center my-5">
             {t("editingAndVisual")}
           </h1>
-          <ul className="h-full w-full space-y-5 mt-6">
+          <ul className="h-full w-full sm:text-sm space-y-5 mt-6">
             <li className="flex items-start gap-x-2">
               <img className="w-4 h-4" src={li} alt="li point" />
               {t("editingLi1")}
@@ -131,7 +135,7 @@ const Services = () => {
             </li>
           </ul>
         </div>
-        <div className="relative mx-auto w-full overflow-hidden flex flex-col items-center text-start rounded-[1.25rem] border border-white h-full lg:max-w-[17rem] xl:aspect-[213/349] px-5 py-6">
+        <div className="relative mx-auto w-full overflow-hidden flex flex-col items-center text-start rounded-[1.25rem] border border-white h-full lg:max-w-[18rem] xl:aspect-[213/349] px-5 py-6">
           <motion.div
             initial={{ scaleX: 0, x: "-50%" }}
             whileInView={{ scaleX: 1 }}
@@ -142,15 +146,15 @@ const Services = () => {
             initial={{ opacity: 0, x: "-50%", y: "-50%" }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="absolute top-0 left-1/2 w-1/3 aspect-square bg-[#fdc966] bg-opacity-50 sm:bg-opacity-100 sm:opacity-100 blur-3xl rounded-full"
+            className="absolute top-0 left-1/2 w-1/3 aspect-square bg-[#fdc966] bg-opacity-40 sm:bg-opacity-60 md:bg-opacity-90 lg:bg-opacity-100 sm:opacity-100 blur-3xl rounded-full"
           />
           <div>
             <img src={img4} alt="img" />
           </div>
-          <h1 className="font-bold text-lg my-5">
+          <h1 className="font-bold text-lg sm:text-base text-center my-5">
             {t("aerialPhotography")}
           </h1>
-          <ul className="h-full w-full space-y-5 mt-6">
+          <ul className="h-full w-full sm:text-sm space-y-5 mt-6">
             <li className="flex items-start gap-x-2">
               <img className="w-4 h-4" src={li} alt="li point" />
               {t("aerialLi1")}
@@ -161,7 +165,7 @@ const Services = () => {
             </li>
           </ul>
         </div>
-        <div className="relative mx-auto w-full overflow-hidden flex flex-col items-center text-start rounded-[1.25rem] border border-white h-full lg:max-w-[17rem] xl:aspect-[213/349] px-5 py-6">
+        <div className="relative mx-auto w-full overflow-hidden flex flex-col items-center text-start rounded-[1.25rem] border border-white h-full lg:max-w-[18rem] xl:aspect-[213/349] px-5 py-6">
           <motion.div
             initial={{ scaleX: 0, x: "-50%" }}
             whileInView={{ scaleX: 1 }}
@@ -172,13 +176,15 @@ const Services = () => {
             initial={{ opacity: 0, x: "-50%", y: "-50%" }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="absolute top-0 left-1/2 w-1/3 aspect-square bg-[#fdc966] bg-opacity-50 sm:bg-opacity-100 sm:opacity-100 blur-3xl rounded-full"
+            className="absolute top-0 left-1/2 w-1/3 aspect-square bg-[#fdc966] bg-opacity-40 sm:bg-opacity-60 md:bg-opacity-90 lg:bg-opacity-100 sm:opacity-100 blur-3xl rounded-full"
           />
           <div>
             <img src={img1} alt="img" />
           </div>
-          <h1 className="font-bold text-lg my-5">{t("liveBroadcast")}</h1>
-          <ul className="h-full w-full space-y-5 mt-6">
+          <h1 className="font-bold text-lg sm:text-base text-center my-5">
+            {t("liveBroadcast")}
+          </h1>
+          <ul className="h-full w-full sm:text-sm space-y-5 mt-6">
             <li className="flex items-start gap-x-2">
               <img className="w-4 h-4" src={li} alt="li point" />
               {t("broadcastLi1")}

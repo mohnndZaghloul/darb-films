@@ -12,11 +12,11 @@ i18n
     debug: true,
     detection: {
       order: [
-        "cookie",
-        "localStorage",
         "sessionStorage",
-        "navigator",
+        "cookie",
         "htmlTag",
+        "localStorage",
+        "navigator",
         "path",
         "subdomain",
       ],

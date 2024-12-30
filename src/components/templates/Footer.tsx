@@ -1,6 +1,8 @@
 import { IoIosArrowBack } from "react-icons/io";
 import { useTranslation } from "react-i18next";
 import {
+  arLogo,
+  enLogo,
   emarat,
   facebook,
   footerlogo,
@@ -19,8 +21,8 @@ const Footer = () => {
 
   return (
     <footer id="contact" className="border-t border-[#323232]">
-      <div className="container grid md:grid-cols-3 py-8">
-        <div>
+      <div className="container grid sm:grid-cols-3 py-8">
+        <div className="mx-auto sm:mx-0">
           <h1 className="text-3xl p-5">{t("importantLinks")}</h1>
           <ul className="space-y-1">
             <li>
@@ -126,7 +128,18 @@ const Footer = () => {
         <div className="text-center">
           <div className="text-sm">
             <a href="#">
-              <img className="w-fit mx-auto" src={footerlogo} alt="darb logo" />
+              <img
+                className="w-24 mx-auto ltr:hidden"
+                src={arLogo}
+                alt="darb logo in arabic"
+              />
+            </a>
+            <a href="#">
+              <img
+                className="w-24 mx-auto rtl:hidden"
+                src={enLogo}
+                alt="darb logo in english"
+              />
             </a>
             <p>{t("mediaProductionDepartment")}</p>
             <p>{t("darbProductionsSubsidiary")}</p>

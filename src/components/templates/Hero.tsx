@@ -17,8 +17,8 @@ const Hero = () => {
     <section
       dir="rtl"
       className="overflow-hidden container flex flex-col-reverse sm:flex-row justify-center items-center py-10">
-      <div className="sm:w-[45%] max-w-[470px] capitalize">
-        <h1 className="text-5xl font-bold">{t("darbFilms")}</h1>
+      <div className="sm:w-[45%] max-w-[380px] xl:max-w-[430px] capitalize">
+        <h1 className="text-5xl font-[900]">{t("darbFilms")}</h1>
         <p className="text-2xl leading-10 py-4">{t("heroText")}</p>
         <div className="flex text-lg font-bold items-center gap-4">
           <motion.a
@@ -46,7 +46,7 @@ const Hero = () => {
         }}
         className="bg-white bg-opacity-20 w-1/4 h-1/4 absolute rounded-full blur-3xl top-20 end-0"
       />
-      <div className="relative w-[90%] md:w-[55%]">
+      <div className="relative w-[90%] md:w-[55%] overflow-hidden">
         <HeroIcon
           icon={icon1}
           position="left-[10%] top-1/4"

@@ -15,7 +15,7 @@ const VideoComponent = ({
       onClick={() => setIsPlayed(!isPlayed)}
       className={`cursor-pointer border ${
         isPlayed ? "grayscale-0" : "grayscale"
-      } transition duration-500 aspect-[16/9] w-full h-full bg-cover`}>
+      } transition duration-500 aspect-[290/176] w-full h-full bg-cover`}>
       <ReactPlayer
         controls={isPlayed}
         playing={isPlayed}

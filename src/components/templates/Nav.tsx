@@ -4,8 +4,7 @@ import { useTranslation } from "react-i18next";
 import i18n from "../../utils/i18n";
 import cookies from "js-cookie";
 
-import logo from "../../assets/navbar/logo.svg";
-import logoTitle from "../../assets/navbar/title.svg";
+import { navLogo } from "../../constants/images";
 import langLogo from "../../assets/navbar/lang.svg";
 
 const Nav = () => {
@@ -13,6 +12,7 @@ const Nav = () => {
   const [currentLang, setCurrentLang] = useState(
     cookies.get("i18next") || "ar"
   );
+
   useEffect(() => {
     i18next.changeLanguage(currentLang);
     window.document.dir = i18n.dir();
@@ -22,9 +22,12 @@ const Nav = () => {
     <header>
       <nav className="max-h-[100px] py-4 border-b-[2px] border-[#323232]">
         <div className="container flex justify-between items-center">
-          <a href="#" className="flex items-center capitalize gap-2">
-            <img className="h-16 md:h-fit" src={logo} alt="darb filmes logo" />
-            <img className="h-10 md:h-fit" src={logoTitle} alt="darb filmes" />
+          <a href="#">
+            <img
+              className="h-16 md:h-20"
+              src={navLogo}
+              alt="darb filmes logo"
+            />
           </a>
           <div>
             <ul className="hidden md:flex justify-between items-center capitalize text-lg font-light">

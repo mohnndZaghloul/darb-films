@@ -23,7 +23,7 @@ const HeroIcon = ({
           whileTap={{ scale: 0.9 }}
           drag
           dragConstraints={constraintsRef}
-          dragElastic={0.5}
+          dragElastic={0.3}
           src={icon}
           alt={title}
         />
