@@ -18,7 +18,7 @@ const HeroIcon = ({
         ref={constraintsRef}
         onClick={() => setIsVisible(!isVisible)}
         className="group relative w-14 lg:w-20 cursor-grab flex">
-        <div className="absolute top-0 left-0 w-full h-full border opacity-50 group-active:opacity-80 group-active:scale-150 transition duration-300 rounded-full" />
+        <div className="absolute top-0 -z-10 left-0 w-full h-full border opacity-50 group-active:opacity-80 group-active:scale-150 transition duration-300 rounded-full" />
         <motion.img
           whileHover={{
             scale: [1.1, 1, 1.1],
