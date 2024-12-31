@@ -25,22 +25,9 @@ const HeroIcon = ({
             scale: [1.1, 1, 1.1],
             transition: { repeat: Infinity },
           }}
-          // whileTap={{ scale: 0.9 }}
-          // whileDrag={{ rotate: 40 }}
-          // transition={{ type: "spring" }}
-          // drag
-          // dragConstraints={constraintsRef}
-          // dragElastic={0.3}
           src={icon}
           alt={title}
         />
-        <motion.span
-          initial={{ x: 0 }}
-          animate={{ x: "110%" }}
-          exit={{ x: 0 }}
-          className="absolute group-hover:bg-white group-hover:text-black transition shadow-inner bg-black rounded-xl p-2">
-          {title}
-        </motion.span>
       </motion.div>
     </div>
   );
