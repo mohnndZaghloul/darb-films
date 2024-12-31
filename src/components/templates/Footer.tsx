@@ -94,17 +94,23 @@ const Footer = () => {
           <ul className="flex items-center gap-2 py-4">
             <li>{t("followUsOn")}</li>
             <li className="hover:scale-110 transition">
-              <a target="_blank" href="#">
+              <a
+                target="_blank"
+                href="https://www.facebook.com/profile.php?id=61560568536456">
                 <img src={facebook} alt="facebook" />
               </a>
             </li>
             <li className="hover:scale-110 transition">
-              <a target="_blank" href="#">
+              <a
+                target="_blank"
+                href="https://www.instagram.com/darbfilms?igsh=OXUyNnprNjZkbng5">
                 <img src={insta} alt="instagram" />
               </a>
             </li>
             <li className="hover:scale-110 transition">
-              <a target="_blank" href="#">
+              <a
+                target="_blank"
+                href="https://x.com/i/flow/login?redirect_after_login=%2Fdarbyfilms">
                 <img
                   className="bg-white w-[25px] p-1 rounded-full"
                   src={x}
