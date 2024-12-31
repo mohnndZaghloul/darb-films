@@ -20,13 +20,13 @@ const HeroIcon = ({
         className="group relative w-14 lg:w-20 cursor-grab flex">
         <div className="absolute top-0 z-0 left-0 w-full h-full border opacity-50 group-hover:opacity-80 group-hover:scale-150 transition duration-300 rounded-full" />
         <motion.img
-          className="z-10"
+          className="z-20"
           initial={{scale:1}}
           whileHover={{
             scale: 1.1,
           }}
           whileTap={{scale:0.95}}
-          transition={{duration:300, type:"spring"}}
+          transition={{duration:300}}
           src={icon}
           alt={title}
         />
