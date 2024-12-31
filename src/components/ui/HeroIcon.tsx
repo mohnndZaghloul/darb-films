@@ -21,10 +21,12 @@ const HeroIcon = ({
         <div className="absolute top-0 z-0 left-0 w-full h-full border opacity-50 group-hover:opacity-80 group-hover:scale-150 transition duration-300 rounded-full" />
         <motion.img
           className="z-10"
+          initial={{scale:1}}
           whileHover={{
-            scale: [1.1, 1, 1.1],
-            transition: { repeat: Infinity },
+            scale: 1.1,
           }}
+          whileTap={{scale:0.95}}
+          transition={{duration:300, type:"spring"}}
           src={icon}
           alt={title}
         />
