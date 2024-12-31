@@ -75,6 +75,21 @@ const Nav = () => {
                 </button>
               </li>
             </ul>
+            <div className="md:hidden text-xl">
+              <span className="absolute bottom-0 left-0 w-full h-[1px] scale-0 group-hover:scale-100 bg-white transition"></span>
+              <button
+                className="flex justify-center items-center gap-2"
+                onClick={() => {
+                  if (currentLang == "en") {
+                    setCurrentLang("ar");
+                  } else {
+                    setCurrentLang("en");
+                  }
+                }}>
+                {currentLang == "ar" ? "English" : "Arabic"}
+                <img className="w-5" src={langLogo} alt="language" />
+              </button>
+            </div>
           </div>
         </div>
       </nav>
