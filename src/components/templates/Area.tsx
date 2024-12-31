@@ -70,8 +70,8 @@ const Area = () => {
   const { t } = useTranslation();
 
   return (
-    <section className="text-center my-28">
-      <h1 className="text-4xl my-20">{t("areaHeader")} </h1>
+    <section id="about" className="text-center my-28">
+      <h1 className="text-[2rem] my-20">{t("areaHeader")} </h1>
       <div className="relative grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-6">
         {videos.map((link, index) => (
           <VideoComponent key={index} {...link} />

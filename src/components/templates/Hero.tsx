@@ -16,10 +16,10 @@ const Hero = () => {
   return (
     <section
       dir="rtl"
-      className="overflow-hidden container flex flex-col-reverse sm:flex-row justify-center items-center py-10">
-      <div className="sm:w-[45%] max-w-[380px] xl:max-w-[430px] capitalize">
-        <h1 className="text-5xl font-[900]">{t("darbFilms")}</h1>
-        <p className="text-2xl leading-10 py-4">{t("heroText")}</p>
+      className="overflow-hidden container flex flex-col-reverse md:flex-row justify-between items-center py-10">
+      <div className="sm:w-[45%] max-w-[24rem]  capitalize">
+        <h1 className="text-[3.1rem] font-[900]">{t("darbFilms")}</h1>
+        <p className="text-[1.4rem] leading-10 py-4">{t("heroText")}</p>
         <div className="flex text-lg font-bold items-center gap-4">
           <motion.a
             href="#contact"
@@ -44,9 +44,9 @@ const Hero = () => {
           opacity: 1,
           transition: { duration: 0.8 },
         }}
-        className="bg-white bg-opacity-20 w-1/4 h-1/4 absolute rounded-full blur-3xl top-20 end-0"
+        className="bg-white bg-opacity-15 w-1/4 h-1/4 absolute rounded-full blur-3xl top-20 end-0"
       />
-      <div className="relative w-[90%] md:w-[55%] overflow-hidden">
+      <div className="relative overflow-hidden">
         <HeroIcon
           icon={icon1}
           position="left-[10%] top-1/4"
@@ -73,7 +73,7 @@ const Hero = () => {
           title={t("editingAndVisual")}
         />
         <img src={hero} alt="hero image" />
-        <span className="absolute bottom-0 w-full h-[30%] bg-gradient-to-t from-black"></span>
+        <span className="absolute bottom-0 w-full h-1/3 bg-gradient-to-t from-black"></span>
       </div>
     </section>
   );

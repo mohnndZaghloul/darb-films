@@ -20,17 +20,17 @@ const Nav = () => {
 
   return (
     <header>
-      <nav className="max-h-[100px] py-4 border-b-[2px] border-[#323232]">
+      <nav className="max-h-[5.6rem] py-3 border-b-[2px] border-[#323232]">
         <div className="container flex justify-between items-center">
           <a href="#">
             <img
-              className="h-16 md:h-20"
+              className="h-16 md:h-[4.3rem]"
               src={navLogo}
               alt="darb filmes logo"
             />
           </a>
           <div>
-            <ul className="hidden md:flex justify-between items-center capitalize text-lg font-light">
+            <ul className="hidden md:flex justify-between items-center capitalize text-[20px] font-light">
               <li className="relative group">
                 <span className="absolute bottom-0 left-0 w-full h-[1px] scale-0 group-hover:scale-100 bg-white transition"></span>
                 <a href="#">{t("home")}</a>
@@ -41,6 +41,13 @@ const Nav = () => {
               <li className="relative group">
                 <span className="absolute bottom-0 left-0 w-full h-[1px] scale-0 group-hover:scale-100 bg-white transition"></span>
                 <a href="#services">{t("services")}</a>
+              </li>
+              <li>
+                <span className="w-[1px] h-4 block mx-3 bg-white"></span>
+              </li>
+              <li className="relative group">
+                <span className="absolute bottom-0 left-0 w-full h-[1px] scale-0 group-hover:scale-100 bg-white transition"></span>
+                <a href="#about">{t("about")}</a>
               </li>
               <li>
                 <span className="w-[1px] h-4 block mx-3 bg-white"></span>
@@ -63,7 +70,7 @@ const Nav = () => {
                       setCurrentLang("en");
                     }
                   }}>
-                  {currentLang == "ar" ? "English" : "العربية"}
+                  {currentLang == "ar" ? "English" : "Arabic"}
                   <img className="w-4" src={langLogo} alt="language" />
                 </button>
               </li>
