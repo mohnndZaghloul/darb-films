@@ -22,8 +22,8 @@ const HeroIcon = ({
           scale: 0.9,
         }}
         onClick={() => setIsVisible(!isVisible)}
-        className="group relative w-14 lg:w-20 cursor-grab flex">
-        <div className="absolute top-0  left-0 w-full h-full border-8 group-hover:border-black opacity-70 group-active:opacity-100 group-active:scale-150 group-active:border-white group-active:border-2 transition duration-300 rounded-full" />
+        className="group relative w-14 lg:w-20 cursor-pointer flex">
+        <div className="absolute top-0  left-0 w-full h-full border-8 group-hover:border-black opacity-80 group-active:opacity-100 group-active:scale-150 group-active:border-white group-active:border-2 transition duration-300 rounded-full" />
         <motion.img src={icon} alt={title} />
       </motion.div>
     </div>
