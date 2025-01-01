@@ -13,7 +13,7 @@ const Services = () => {
   return (
     <section
       id="services"
-      className="text-center py-20 border-y-[2px] border-y-[#323232]">
+      className="text-center py-10 border-y-[2px] border-y-[#323232]">
       <h1 className="text-[3.1rem] font-bold">{t("ourServices")}</h1>
       <p className="text-[1.8rem] my-4 pb-10">{t("servicesHeader")} </p>
       <div className="px-10 2xl:container grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
