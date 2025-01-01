@@ -20,8 +20,8 @@ const Footer = () => {
 
   return (
     <footer id="contact" className="border-t border-[#323232]">
-      <div className="container grid grid-cols-2 sm:grid-cols-3 py-8">
-        <div className="mx-auto sm:mx-0">
+      <div className="container justify-center grid sm:grid-cols-3 py-8">
+        <div className=" sm:mx-0">
           <h1 className="text-3xl p-5">{t("importantLinks")}</h1>
           <ul className="space-y-1">
             <li>
@@ -48,7 +48,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="mx-auto">
+        <div className="">
           <h1 className="text-3xl py-5">{t("contact")}</h1>
           <ul className="space-y-1">
             <li>
@@ -91,9 +91,8 @@ const Footer = () => {
               </a>
             </li>
           </ul>
-          <p className="sm:hidden pt-4">{t("followUsOn")}</p>
           <ul className="flex items-center gap-2 py-4">
-            <li className="hidden sm:block">{t("followUsOn")}</li>
+            <li>{t("followUsOn")}</li>
             <li className="hover:scale-110 transition">
               <a
                 target="_blank"
@@ -131,7 +130,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="text-center col-span-2 sm:col-span-1">
+        <div className="text-center">
           <div className="text-sm">
             <a href="#">
               <img
