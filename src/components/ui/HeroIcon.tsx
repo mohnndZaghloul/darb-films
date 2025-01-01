@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useRef, useState } from "react";
+import { useState } from "react";
 const HeroIcon = ({
   icon,
   title,
@@ -9,38 +9,22 @@ const HeroIcon = ({
   title: string;
   position: string;
 }) => {
-  const constraintsRef = useRef<HTMLDivElement>(null);
+  // const constraintsRef = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
 
   return (
     <div className={`absolute group ${position}`}>
       <motion.div
-        ref={constraintsRef}
+        whileHover={{
+          scale: 1.1,
+        }}
+        whileTap={{
+          scale: 0.9,
+        }}
         onClick={() => setIsVisible(!isVisible)}
         className="group relative w-14 lg:w-20 cursor-grab flex">
-        <div className="absolute top-0 z-0 left-0 w-full h-full border opacity-50 group-active:opacity-80 group-active:scale-150 transition duration-300 rounded-full" />
-        <motion.img
-          className="z-10"
-          whileHover={{
-            scale: [1.1, 1, 1.1],
-            transition: { repeat: Infinity },
-          }}
-          // whileTap={{ scale: 0.9 }}
-          // whileDrag={{ rotate: 40 }}
-          // transition={{ type: "spring" }}
-          // drag
-          // dragConstraints={constraintsRef}
-          // dragElastic={0.3}
-          src={icon}
-          alt={title}
-        />
-        <motion.span
-          initial={{ x: 0 }}
-          animate={{ x: "110%" }}
-          exit={{ x: 0 }}
-          className="absolute group-hover:bg-white group-hover:text-black transition shadow-inner bg-black rounded-xl p-2">
-          {title}
-        </motion.span>
+        <div className="absolute top-0  left-0 w-full h-full border-8 group-hover:border-black opacity-70 group-active:opacity-100 group-active:scale-150 group-active:border-white group-active:border-2 transition duration-300 rounded-full" />
+        <motion.img src={icon} alt={title} />
       </motion.div>
     </div>
   );
