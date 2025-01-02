@@ -131,18 +131,18 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="text-center">
+        <div className="sm:text-center">
           <div className="text-sm">
             <a href="#">
               <img
-                className="w-24 mx-auto ltr:hidden"
+                className="w-24 sm:mx-auto ltr:hidden"
                 src={arLogo}
                 alt="darb logo in arabic"
               />
             </a>
             <a href="#">
               <img
-                className="w-24 mx-auto rtl:hidden"
+                className="w-24 sm:mx-auto rtl:hidden"
                 src={enLogo}
                 alt="darb logo in english"
               />
