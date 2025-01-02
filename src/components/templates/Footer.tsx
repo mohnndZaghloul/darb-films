@@ -12,10 +12,10 @@ import {
   youtube,
 } from "../../constants/images";
 import { IoMdMail } from "react-icons/io";
-import { useState } from "react";
+// import { useState } from "react";
 
 const Footer = () => {
-  const [email, setEmail] = useState<string>("");
+  // const [email, setEmail] = useState<string>("");
   const { t } = useTranslation();
 
   return (
