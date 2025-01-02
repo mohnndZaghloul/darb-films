@@ -19,7 +19,7 @@ const Services = () => {
         {t("servicesHeader")}{" "}
       </p>
       <div className="px-10 2xl:container grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
-        <div className="relative mx-auto w-full overflow-hidden flex flex-col items-center text-start rounded-[1.25rem] border border-white h-full lg:max-w-[18rem] xl:aspect-[213/349] px-10 sm:px-5 py-10 sm:py-6">
+        <div className="relative mx-auto w-full overflow-hidden flex flex-col items-center text-start rounded-[1.25rem] border border-white h-full lg:max-w-[18rem] xl:aspect-[213/349] px-10 sm:px-4 py-10 sm:py-6">
           <motion.div
             initial={{ scaleX: 0, x: "-50%" }}
             whileInView={{ scaleX: 1 }}
@@ -39,29 +39,29 @@ const Services = () => {
             {t("photography")}
           </h1>
           <ul className="h-full w-full text-2xl sm:text-sm space-y-4 mt-6">
-            <li className="flex items-start gap-x-2 break-all">
+            <li className="flex items-start gap-x-2">
               <img className="w-4 h-4" src={li} alt="li point" />
-              {t("photographyLi1")}
+              <span className="">{t("photographyLi1")}</span>
             </li>
-            <li className="flex items-start gap-x-2 break-all">
+            <li className="flex items-start gap-x-2">
               <img className="w-4 h-4" src={li} alt="li point" />
-              {t("photographyLi2")}
+              <span className="">{t("photographyLi2")}</span>
             </li>
-            <li className="flex items-start gap-x-2 break-all">
+            <li className="flex items-start gap-x-2">
               <img className="w-4 h-4" src={li} alt="li point" />
-              {t("photographyLi3")}
+              <span className="">{t("photographyLi3")}</span>
             </li>
-            <li className="flex items-start gap-x-2 break-all">
+            <li className="flex items-start gap-x-2">
               <img className="w-4 h-4" src={li} alt="li point" />
-              {t("photographyLi4")}
+              <span className="">{t("photographyLi4")}</span>
             </li>
-            <li className="flex items-start gap-x-2 break-all">
+            <li className="flex items-start gap-x-2">
               <img className="w-4 h-4" src={li} alt="li point" />
-              {t("photographyLi5")}
+              <span className="">{t("photographyLi5")}</span>
             </li>
           </ul>
         </div>
-        <div className="relative mx-auto w-full overflow-hidden flex flex-col items-center text-start rounded-[1.25rem] border border-white h-full lg:max-w-[18rem] xl:aspect-[213/349] px-10 sm:px-5 py-10 sm:py-6">
+        <div className="relative mx-auto w-full overflow-hidden flex flex-col items-center text-start rounded-[1.25rem] border border-white h-full lg:max-w-[18rem] xl:aspect-[213/349] px-10 sm:px-4 py-10 sm:py-6">
           <motion.div
             initial={{ scaleX: 0, x: "-50%" }}
             whileInView={{ scaleX: 1 }}
@@ -81,29 +81,29 @@ const Services = () => {
             {t("videography")}{" "}
           </h1>
           <ul className="h-full w-full text-2xl sm:text-sm space-y-4 mt-6">
-            <li className="flex items-start gap-x-2 break-all">
+            <li className="flex items-start gap-x-2">
               <img className="w-4 h-4" src={li} alt="li point" />
-              {t("videographyLi1")}
+              <span className="">{t("videographyLi1")}</span>
             </li>
-            <li className="flex items-start gap-x-2 break-all">
+            <li className="flex items-start gap-x-2">
               <img className="w-4 h-4" src={li} alt="li point" />
-              {t("videographyLi2")}
+              <span className="">{t("videographyLi2")}</span>
             </li>
-            <li className="flex items-start gap-x-2 break-all">
+            <li className="flex items-start gap-x-2">
               <img className="w-4 h-4" src={li} alt="li point" />
-              {t("videographyLi3")}
+              <span className="">{t("videographyLi3")}</span>
             </li>
-            <li className="flex items-start gap-x-2 break-all">
+            <li className="flex items-start gap-x-2">
               <img className="w-4 h-4" src={li} alt="li point" />
-              {t("videographyLi4")}
+              <span className="">{t("videographyLi4")}</span>
             </li>
-            <li className="flex items-start gap-x-2 break-all">
+            <li className="flex items-start gap-x-2">
               <img className="w-4 h-4" src={li} alt="li point" />
-              {t("videographyLi5")}
+              <span className="">{t("videographyLi5")}</span>
             </li>
           </ul>
         </div>
-        <div className="relative mx-auto w-full overflow-hidden flex flex-col items-center text-start rounded-[1.25rem] border border-white h-full lg:max-w-[18rem] xl:aspect-[213/349] px-10 sm:px-5 py-10 sm:py-6">
+        <div className="relative mx-auto w-full overflow-hidden flex flex-col items-center text-start rounded-[1.25rem] border border-white h-full lg:max-w-[18rem] xl:aspect-[213/349] px-10 sm:px-4 py-10 sm:py-6">
           <motion.div
             initial={{ scaleX: 0, x: "-50%" }}
             whileInView={{ scaleX: 1 }}
@@ -123,21 +123,21 @@ const Services = () => {
             {t("editingAndVisual")}
           </h1>
           <ul className="h-full w-full text-2xl sm:text-sm space-y-4 mt-6">
-            <li className="flex items-start gap-x-2 break-all">
+            <li className="flex items-start gap-x-2">
               <img className="w-4 h-4" src={li} alt="li point" />
-              {t("editingLi1")}
+              <span className="">{t("editingLi1")}</span>
             </li>
-            <li className="flex items-start gap-x-2 break-all">
+            <li className="flex items-start gap-x-2">
               <img className="w-4 h-4" src={li} alt="li point" />
-              {t("editingLi2")}
+              <span className="">{t("editingLi2")}</span>
             </li>
-            <li className="flex items-start gap-x-2 break-all">
+            <li className="flex items-start gap-x-2">
               <img className="w-4 h-4" src={li} alt="li point" />
-              {t("editingLi3")}
+              <span className="">{t("editingLi3")}</span>
             </li>
           </ul>
         </div>
-        <div className="relative mx-auto w-full overflow-hidden flex flex-col items-center text-start rounded-[1.25rem] border border-white h-full lg:max-w-[18rem] xl:aspect-[213/349] px-10 sm:px-5 py-10 sm:py-6">
+        <div className="relative mx-auto w-full overflow-hidden flex flex-col items-center text-start rounded-[1.25rem] border border-white h-full lg:max-w-[18rem] xl:aspect-[213/349] px-10 sm:px-4 py-10 sm:py-6">
           <motion.div
             initial={{ scaleX: 0, x: "-50%" }}
             whileInView={{ scaleX: 1 }}
@@ -157,17 +157,17 @@ const Services = () => {
             {t("aerialPhotography")}
           </h1>
           <ul className="h-full w-full text-2xl sm:text-sm space-y-4 mt-6">
-            <li className="flex items-start gap-x-2 break-all">
+            <li className="flex items-start gap-x-2">
               <img className="w-4 h-4" src={li} alt="li point" />
-              {t("aerialLi1")}
+              <span className="">{t("aerialLi1")}</span>
             </li>
-            <li className="flex items-start gap-x-2 break-all">
+            <li className="flex items-start gap-x-2">
               <img className="w-4 h-4" src={li} alt="li point" />
-              {t("aerialLi2")}
+              <span className="">{t("aerialLi2")}</span>
             </li>
           </ul>
         </div>
-        <div className="relative mx-auto w-full overflow-hidden flex flex-col items-center text-start rounded-[1.25rem] border border-white h-full lg:max-w-[18rem] xl:aspect-[213/349] px-10 sm:px-5 py-10 sm:py-6">
+        <div className="relative mx-auto w-full overflow-hidden flex flex-col items-center text-start rounded-[1.25rem] border border-white h-full lg:max-w-[18rem] xl:aspect-[213/349] px-10 sm:px-4 py-10 sm:py-6">
           <motion.div
             initial={{ scaleX: 0, x: "-50%" }}
             whileInView={{ scaleX: 1 }}
@@ -187,13 +187,13 @@ const Services = () => {
             {t("liveBroadcast")}
           </h1>
           <ul className="h-full w-full text-2xl sm:text-sm space-y-4 mt-6">
-            <li className="flex items-start gap-x-2 break-all">
+            <li className="flex items-start gap-x-2">
               <img className="w-4 h-4" src={li} alt="li point" />
-              {t("broadcastLi1")}
+              <span className="">{t("broadcastLi1")}</span>
             </li>
-            <li className="flex items-start gap-x-2 break-all">
+            <li className="flex items-start gap-x-2">
               <img className="w-4 h-4" src={li} alt="li point" />
-              {t("broadcastLi2")}
+              <span className="">{t("broadcastLi2")}</span>
             </li>
           </ul>
         </div>
