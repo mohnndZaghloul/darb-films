@@ -4,7 +4,7 @@ import { useTranslation } from "react-i18next";
 import i18n from "../../utils/i18n";
 import cookies from "js-cookie";
 
-import { navLogo } from "../../constants/images";
+import { navLogo, navLogoEn } from "../../constants/images";
 import langLogo from "../../assets/navbar/lang.svg";
 
 const Nav = () => {
@@ -22,10 +22,17 @@ const Nav = () => {
     <header>
       <nav className="max-h-[5.6rem] py-3 border-b-[2px] border-[#323232]">
         <div className="container flex justify-between items-center">
-          <a href="#">
+          <a className="ltr:hidden" href="#">
             <img
               className="h-16 md:h-[4.3rem]"
               src={navLogo}
+              alt="darb filmes logo"
+            />
+          </a>
+          <a className="rtl:hidden" href="#">
+            <img
+              className="h-16 md:h-[4.3rem]"
+              src={navLogoEn}
               alt="darb filmes logo"
             />
           </a>

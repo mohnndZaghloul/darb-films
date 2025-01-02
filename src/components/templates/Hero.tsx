@@ -16,7 +16,7 @@ const Hero = () => {
   return (
     <section
       dir="rtl"
-      className="overflow-hidden container flex flex-col-reverse md:flex-row justify-between items-center py-10">
+      className="overflow-hidden container flex flex-col-reverse md:flex-row justify-between items-center my-10">
       <div className="sm:w-[45%] max-w-[24rem]  capitalize">
         <h1 className="text-[3.1rem] font-[900]">{t("darbFilms")}</h1>
         <p className="text-[1.4rem] leading-10 py-4">{t("heroText")}</p>

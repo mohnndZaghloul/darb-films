@@ -149,7 +149,7 @@ const Footer = () => {
             <p>{t("mediaProductionDepartment")}</p>
             <p>{t("darbProductionsSubsidiary")}</p>
           </div>
-          <div className="text-lg my-8">
+          {/* <div className="text-lg my-8">
             <p>{t("subscribe")}</p>
             <div className="overflow-hidden w-3/4 lg:w-2/3 2xl:w-1/2 mx-auto relative rounded-full my-2">
               <a
@@ -166,7 +166,7 @@ const Footer = () => {
                 placeholder={t("email")}
               />
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="text-black flex gap-4 px-10 py-2 bg-[#f2f2f2] font-medium">

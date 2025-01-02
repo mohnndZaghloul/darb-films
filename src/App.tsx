@@ -9,7 +9,7 @@ import Footer from "./components/templates/Footer";
 
 function App() {
   return (
-    <main className="bg-black text-white font-light">
+    <main className="bg-black text-white font-light overflow-hidden">
       <Nav />
       <Hero />
       <Area />

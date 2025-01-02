@@ -1,5 +1,6 @@
 // nav
 import navLogo from "../assets/navbar/logo.png";
+import navLogoEn from "../assets/navbar/logoEn.png";
 //hero images
 import hero from "../assets/hero/hero.png";
 import icon1 from "../assets/hero/Group 40.png";
@@ -62,6 +63,7 @@ import footerlogo from "../assets/footer/footerlogo.svg";
 
 export {
   navLogo,
+  navLogoEn,
   hero,
   icon1,
   icon2,
