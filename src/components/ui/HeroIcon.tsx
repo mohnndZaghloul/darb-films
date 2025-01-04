@@ -15,15 +15,9 @@ const HeroIcon = ({
   return (
     <div className={`absolute group ${position}`}>
       <motion.div
-        whileHover={{
-          scale: 1.1,
-        }}
-        whileTap={{
-          scale: 0.9,
-        }}
         onClick={() => setIsVisible(!isVisible)}
         className="group relative w-14 lg:w-20 cursor-pointer flex">
-        <div className="absolute top-0  left-0 w-full h-full border-4 md:border-8 group-hover:border-black opacity-80 group-active:opacity-100 group-active:scale-150 group-active:border-white group-active:border-2 transition duration-300 rounded-full" />
+        <div className="absolute top-0 left-0 w-full h-full border-4 group-hover:scale-110 md:border-8 group-hover:border-black opacity-100 group-active:opacity-100 group-active:scale-150 group-active:border-white group-active:border-2 transition duration-300 rounded-full" />
         <motion.img src={icon} alt={title} />
       </motion.div>
     </div>
