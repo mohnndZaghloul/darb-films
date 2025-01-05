@@ -30,8 +30,14 @@ const Services = () => {
             initial={{ opacity: 0, x: "-50%", y: "-50%" }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="absolute top-0 left-1/2 w-1/2 aspect-square bg-[#fdc966] bg-opacity-50 lg:bg-opacity-70 blur-3xl rounded-full"
+            className="absolute top-0 left-1/2 w-1/2 bg-[#fdc966] shadow-[0px_10px_140px_18px_#fdc966] rounded-full"
           />
+          {/* <motion.div
+            initial={{ opacity: 0, x: "-50%", y: "-50%" }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="absolute top-0 left-1/2 w-1/2 aspect-square bg-[#fdc966] bg-opacity-50 lg:bg-opacity-70 blur-3xl rounded-full"
+          /> */}
           <div>
             <img src={img5} alt="img" />
           </div>
@@ -72,8 +78,14 @@ const Services = () => {
             initial={{ opacity: 0, x: "-50%", y: "-50%" }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="absolute top-0 left-1/2 w-1/2 aspect-square bg-[#fdc966] bg-opacity-50 lg:bg-opacity-70 blur-3xl rounded-full"
+            className="absolute top-0 left-1/2 w-1/2 bg-[#fdc966] shadow-[0px_10px_140px_18px_#fdc966] rounded-full"
           />
+          {/* <motion.div
+            initial={{ opacity: 0, x: "-50%", y: "-50%" }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="absolute top-0 left-1/2 w-1/2 aspect-square bg-[#fdc966] bg-opacity-50 lg:bg-opacity-70 blur-3xl rounded-full"
+          /> */}
           <div>
             <img src={img2} alt="img" />
           </div>
@@ -114,8 +126,14 @@ const Services = () => {
             initial={{ opacity: 0, x: "-50%", y: "-50%" }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="absolute top-0 left-1/2 w-1/2 aspect-square bg-[#fdc966] bg-opacity-50 lg:bg-opacity-70 blur-3xl rounded-full"
+            className="absolute top-0 left-1/2 w-1/2 bg-[#fdc966] shadow-[0px_10px_140px_18px_#fdc966] rounded-full"
           />
+          {/* <motion.div
+            initial={{ opacity: 0, x: "-50%", y: "-50%" }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="absolute top-0 left-1/2 w-1/2 aspect-square bg-[#fdc966] bg-opacity-50 lg:bg-opacity-70 blur-3xl rounded-full"
+          /> */}
           <div>
             <img src={img3} alt="img" />
           </div>
@@ -148,8 +166,14 @@ const Services = () => {
             initial={{ opacity: 0, x: "-50%", y: "-50%" }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="absolute top-0 left-1/2 w-1/2 aspect-square bg-[#fdc966] bg-opacity-50 lg:bg-opacity-70 blur-3xl rounded-full"
+            className="absolute top-0 left-1/2 w-1/2 bg-[#fdc966] shadow-[0px_10px_140px_18px_#fdc966] rounded-full"
           />
+          {/* <motion.div
+            initial={{ opacity: 0, x: "-50%", y: "-50%" }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="absolute top-0 left-1/2 w-1/2 aspect-square bg-[#fdc966] bg-opacity-50 lg:bg-opacity-70 blur-3xl rounded-full"
+          /> */}
           <div>
             <img src={img4} alt="img" />
           </div>
@@ -178,8 +202,14 @@ const Services = () => {
             initial={{ opacity: 0, x: "-50%", y: "-50%" }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="absolute top-0 left-1/2 w-1/2 aspect-square bg-[#fdc966] bg-opacity-50 lg:bg-opacity-70 blur-3xl rounded-full"
+            className="absolute top-0 left-1/2 w-1/2 bg-[#fdc966] shadow-[0px_10px_140px_18px_#fdc966] rounded-full"
           />
+          {/* <motion.div
+            initial={{ opacity: 0, x: "-50%", y: "-50%" }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            className="absolute top-0 left-1/2 w-1/2 aspect-square bg-[#fdc966] bg-opacity-50 lg:bg-opacity-70 blur-3xl rounded-full"
+          /> */}
           <div>
             <img src={img1} alt="img" />
           </div>
