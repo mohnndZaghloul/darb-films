@@ -30,7 +30,7 @@ const Services = () => {
             initial={{ opacity: 0, x: "-50%", y: "-50%" }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="absolute top-0 left-1/2 w-1/3 aspect-square bg-[#fdc966] bg-opacity-50 sm:bg-opacity-90 blur-3xl rounded-full"
+            className="absolute top-0 left-1/2 w-1/2 aspect-square bg-[#fdc966] bg-opacity-50 lg:bg-opacity-70 blur-3xl rounded-full"
           />
           <div>
             <img src={img5} alt="img" />
@@ -72,7 +72,7 @@ const Services = () => {
             initial={{ opacity: 0, x: "-50%", y: "-50%" }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="absolute top-0 left-1/2 w-1/3 aspect-square bg-[#fdc966] bg-opacity-50 sm:bg-opacity-90 sm:opacity-100 blur-3xl rounded-full"
+            className="absolute top-0 left-1/2 w-1/2 aspect-square bg-[#fdc966] bg-opacity-50 lg:bg-opacity-70 blur-3xl rounded-full"
           />
           <div>
             <img src={img2} alt="img" />
@@ -114,7 +114,7 @@ const Services = () => {
             initial={{ opacity: 0, x: "-50%", y: "-50%" }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="absolute top-0 left-1/2 w-1/3 aspect-square bg-[#fdc966] bg-opacity-50 sm:bg-opacity-90 sm:opacity-100 blur-3xl rounded-full"
+            className="absolute top-0 left-1/2 w-1/2 aspect-square bg-[#fdc966] bg-opacity-50 lg:bg-opacity-70 blur-3xl rounded-full"
           />
           <div>
             <img src={img3} alt="img" />
@@ -148,7 +148,7 @@ const Services = () => {
             initial={{ opacity: 0, x: "-50%", y: "-50%" }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="absolute top-0 left-1/2 w-1/3 aspect-square bg-[#fdc966] bg-opacity-50 sm:bg-opacity-90 sm:opacity-100 blur-3xl rounded-full"
+            className="absolute top-0 left-1/2 w-1/2 aspect-square bg-[#fdc966] bg-opacity-50 lg:bg-opacity-70 blur-3xl rounded-full"
           />
           <div>
             <img src={img4} alt="img" />
@@ -178,7 +178,7 @@ const Services = () => {
             initial={{ opacity: 0, x: "-50%", y: "-50%" }}
             whileInView={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="absolute top-0 left-1/2 w-1/3 aspect-square bg-[#fdc966] bg-opacity-50 sm:bg-opacity-90 sm:opacity-100 blur-3xl rounded-full"
+            className="absolute top-0 left-1/2 w-1/2 aspect-square bg-[#fdc966] bg-opacity-50 lg:bg-opacity-70 blur-3xl rounded-full"
           />
           <div>
             <img src={img1} alt="img" />
