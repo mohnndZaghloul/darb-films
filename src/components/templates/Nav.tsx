@@ -10,7 +10,7 @@ import langLogo from "../../assets/navbar/lang.svg";
 const Nav = () => {
   const { t } = useTranslation();
   const [currentLang, setCurrentLang] = useState(
-    cookies.get("i18next") || "ar"
+    cookies.get("i18next") || "en"
   );
 
   useEffect(() => {

@@ -1,4 +1,4 @@
-import { motion } from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import {
   hero,
   icon1,
@@ -12,12 +12,19 @@ import { useTranslation } from "react-i18next";
 
 const Hero = () => {
   const { t } = useTranslation();
+  const { scrollYProgress } = useScroll({
+    offset: ["0 0", "1 1"],
+  });
+
+  const y = useTransform(scrollYProgress, [0, 0.2], [0, 50]);
+  const y2 = useTransform(scrollYProgress, [0, 0.2], [0, 100]);
 
   return (
     <section
-      dir="rtl"
-      className="overflow-hidden container flex flex-col-reverse md:flex-row justify-between items-center my-10">
-      <div className="sm:w-[45%] max-w-[24rem]  capitalize">
+      className="container flex flex-col-reverse md:flex-row justify-between items-center my-10">
+      <motion.div
+        style={{ y: y2 }}
+        className="sm:w-[45%] max-w-[24rem]  capitalize">
         <h1 className="text-[3.1rem] font-[900]">{t("darbFilms")}</h1>
         <p className="text-[1.4rem] leading-10 py-4">{t("heroText")}</p>
         <div className="flex text-lg font-bold items-center gap-4">
@@ -36,7 +43,7 @@ const Hero = () => {
             {t("ourServices")}
           </motion.a>
         </div>
-      </div>
+      </motion.div>
       <motion.div
         initial={{ scale: 0, opacity: 0 }}
         whileInView={{
@@ -46,7 +53,7 @@ const Hero = () => {
         }}
         className="bg-white bg-opacity-15 w-1/4 h-1/4 absolute rounded-full blur-3xl top-20 end-0"
       />
-      <div className="relative overflow-hidden">
+      <motion.div style={{ y }} className="relative">
         <HeroIcon
           icon={icon1}
           position="left-[10%] top-1/4"
@@ -74,7 +81,7 @@ const Hero = () => {
         />
         <img src={hero} alt="hero image" />
         <span className="absolute bottom-0 w-full h-1/3 bg-gradient-to-t from-black"></span>
-      </div>
+      </motion.div>
     </section>
   );
 };

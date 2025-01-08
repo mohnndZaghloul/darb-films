@@ -8,12 +8,12 @@ i18n
   .use(LanguageDetector)
   .use(HttpApi)
   .init({
-    fallbackLng: "ar",
+    fallbackLng: "en",
     debug: true,
     detection: {
       order: [
-        "sessionStorage",
         "cookie",
+        "sessionStorage",
         "htmlTag",
         "localStorage",
         "navigator",

@@ -14,6 +14,8 @@ import {
   AreaImg11,
   AreaImg12,
 } from "../../constants/images";
+import { motion, useScroll, useTransform } from "framer-motion";
+import { useRef } from "react";
 
 const videos = [
   {
@@ -68,15 +70,32 @@ const videos = [
 
 const Area = () => {
   const { t } = useTranslation();
+  const ref = useRef<HTMLElement>(null);
+
+  const { scrollYProgress } = useScroll({
+    target: ref,
+    offset: ["0 1", "1 1"],
+  });
+
+  const y = useTransform(scrollYProgress, [0, 0.4], [100, 0]);
+  const y2 = useTransform(scrollYProgress, [0, 0.4], [200, 0]);
+  const opacity = useTransform(scrollYProgress, [0, 0.2], [0, 1]);
+  const opacity2 = useTransform(scrollYProgress, [0, 0.2], [0, 1]);
 
   return (
-    <section id="about" className="text-center my-20">
-      <h1 className="container text-[2rem] my-8 sm:my-20">{t("areaHeader")} </h1>
-      <div className="relative grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-6">
+    <section ref={ref} id="about" className="text-center my-20">
+      <motion.h1
+        style={{ y, opacity }}
+        className="container text-[2rem] my-8 sm:my-20">
+        {t("areaHeader")}
+      </motion.h1>
+      <motion.div
+        style={{ y: y2, opacity: opacity2 }}
+        className="relative grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 px-6">
         {videos.map((link, index) => (
           <VideoComponent key={index} {...link} />
         ))}
-      </div>
+      </motion.div>
     </section>
   );
 };
