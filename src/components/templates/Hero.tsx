@@ -16,13 +16,15 @@ const Hero = () => {
     offset: ["0 0", "1 1"],
   });
 
-  const y = useTransform(scrollYProgress, [0, 0.2], [0, 50]);
-  const y2 = useTransform(scrollYProgress, [0, 0.2], [0, 100]);
+  const y = useTransform(scrollYProgress, [0, 0.1], [0, 50]);
+  const y2 = useTransform(scrollYProgress, [0, 0.2], [0, 150]);
 
   return (
-    <section
-      className="container flex flex-col-reverse md:flex-row justify-between items-center my-10">
+    <section className="container flex flex-col-reverse md:flex-row justify-between items-center my-10">
       <motion.div
+        initial={{ x: 100, opacity: 0, scale: 0.8 }}
+        whileInView={{ x: 0, opacity: 1, scale: 1 }}
+        transition={{ duration: 3, type: "spring" }}
         style={{ y: y2 }}
         className="sm:w-[45%] max-w-[24rem]  capitalize">
         <h1 className="text-[3.1rem] font-[900]">{t("darbFilms")}</h1>
@@ -53,7 +55,12 @@ const Hero = () => {
         }}
         className="bg-white bg-opacity-15 w-1/4 h-1/4 absolute rounded-full blur-3xl top-20 end-0"
       />
-      <motion.div style={{ y }} className="relative">
+      <motion.div
+        initial={{ x: -100, opacity: 0, scale: 0.8 }}
+        style={{ y }}
+        whileInView={{ x: 0, opacity: 1, scale: 1 }}
+        transition={{ duration: 3, type: "spring" }}
+        className="relative">
         <HeroIcon
           icon={icon1}
           position="left-[10%] top-1/4"
