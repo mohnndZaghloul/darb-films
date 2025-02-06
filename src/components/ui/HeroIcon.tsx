@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useRef, useState } from "react";
 const HeroIcon = ({
   icon,
   title,
@@ -9,77 +9,41 @@ const HeroIcon = ({
   title: string;
   position: string;
 }) => {
-  // const constraintsRef = useRef<HTMLDivElement>(null);
+  const constraintsRef = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
 
   return (
-    <div className={`absolute group ${position}`}>
+    <div className={`absolute z-10 group ${position}`}>
       <motion.div
-        initial={{ x: 50, y: 50, opacity: 0 }}
-        whileInView={{ x: 0, y: 0, opacity: 1 }}
-        transition={{ duration: 2, damping: 5, type: "spring" }}
+        ref={constraintsRef}
+        initial={{ x: 50, y: 25 }}
+        whileInView={{ x: 0, y: 0 }}
+        transition={{ duration: 2, damping: 4, type: "spring" }}
         onClick={() => setIsVisible(!isVisible)}
         className="group relative w-14 lg:w-20 cursor-pointer flex">
         <div className="absolute top-0 left-0 w-full h-full rounded-full border-4 border-white group-hover:border-black group-active:border-white group-active:scale-150 group-active:border-2 transition duration-300" />
         <motion.img
-          className="group-hover:invert transition duration-300"
+          drag
+          dragConstraints={constraintsRef}
+          dragElastic={0.3}
+          whileDrag={{ rotate: 10 }}
+          transition={{ duration: 0.3, type: "spring" }}
+          className="group-hover:invert ltr:!scale-x-[-1]"
           src={icon}
           alt={title}
         />
+        {isVisible ? (
+          <motion.span
+            initial={{ x: "-50%", y: 0, opacity: 0 }}
+            animate={{ x: "-50%", y: "100%", opacity: 1 }}
+            exit={{ x: "-50%", y: 0, opacity: 0 }}
+            className="ltr:!scale-x-[-1] translate-y-full absolute min-w-24 text-center -bottom-2 left-1/2  -translate-x-1/2 bg-black rounded-xl p-2">
+            {title}
+          </motion.span>
+        ) : null}
       </motion.div>
     </div>
   );
 };
 
 export default HeroIcon;
-// import { motion } from "framer-motion";
-// import { useRef, useState } from "react";
-// const HeroIcon = ({
-//   icon,
-//   title,
-//   position,
-// }: {
-//   icon: string;
-//   title: string;
-//   position: string;
-// }) => {
-//   const constraintsRef = useRef<HTMLDivElement>(null);
-//   const [isVisible, setIsVisible] = useState(false);
-
-//   return (
-//     <div className={`absolute ${position}`}>
-//       <motion.div
-//         ref={constraintsRef}
-//         onClick={() => setIsVisible(!isVisible)}
-//         className="group relative w-14 lg:w-20 cursor-grab flex">
-//         <div className="absolute top-0 z-0 left-0 w-full h-full border opacity-50 group-active:opacity-80 group-active:scale-150 transition duration-300 rounded-full" />
-//         <motion.img
-//           className="z-10"
-//           whileHover={{
-//             scale: [1.1, 1, 1.1],
-//             transition: { repeat: Infinity },
-//           }}
-//           whileTap={{ scale: 0.9 }}
-//           whileDrag={{ rotate: 40 }}
-//           transition={{ type: "spring" }}
-//           drag
-//           dragConstraints={constraintsRef}
-//           dragElastic={0.3}
-//           src={icon}
-//           alt={title}
-//         />
-//         {isVisible ? (
-//           <motion.span
-//             initial={{ x: 0, opacity: 0 }}
-//             animate={{ x: "110%", opacity: 1 }}
-//             exit={{ x: 0, opacity: 0 }}
-//             className="absolute bg-black rounded-xl p-2">
-//             {title}
-//           </motion.span>
-//         ) : null}
-//       </motion.div>
-//     </div>
-//   );
-// };
-
-// export default HeroIcon;

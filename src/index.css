@@ -1,8 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
 @media (max-width: 1200px) {
   html {
     font-size: 14px; /* 1rem = 14px */
@@ -20,4 +18,9 @@
 }
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+  font-family: "Cairo", serif;
 }

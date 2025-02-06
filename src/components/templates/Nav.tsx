@@ -1,3 +1,4 @@
+// @ts-nocheck
 import i18next from "i18next";
 import { useEffect, useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -7,20 +8,47 @@ import cookies from "js-cookie";
 import { navLogo, navLogoEn } from "../../constants/images";
 import langLogo from "../../assets/navbar/lang.svg";
 
+import { motion, useScroll } from "framer-motion";
+
 const Nav = () => {
+  const [hidden, setHidden] = useState(false);
+  const { scrollY } = useScroll();
+
   const { t } = useTranslation();
   const [currentLang, setCurrentLang] = useState(
-    cookies.get("i18next") || "en"
+    cookies.get("i18next") || "ar"
   );
 
+  const variants = {
+    visible: { opacity: 1, y: 0 },
+    hidden: { opacity: 0, y: -100 },
+  };
+
+  function update() {
+    if (scrollY?.current < scrollY?.prev) {
+      setHidden(false);
+    } else if (scrollY?.current > 100 && scrollY?.current > scrollY?.prev) {
+      setHidden(true);
+    }
+  }
+
   useEffect(() => {
+    scrollY.onChange(() => update());
+  }, []);
+
+  useEffect(() => {
+    console.log(currentLang);
     i18next.changeLanguage(currentLang);
-    window.document.dir = i18n.dir();
+    window.document.dir = i18n.dir(currentLang);
   }, [currentLang]);
 
   return (
-    <header>
-      <nav className="max-h-[5.6rem] py-3 border-b-[2px] border-[#323232]">
+    <header className="fixed top-0 w-full z-50">
+      <motion.nav
+        variants={variants}
+        animate={hidden ? "hidden" : "visible"}
+        transition={{ ease: [0.1, 0.25, 0.3, 1], duration: 0.6 }}
+        className="bg-black bg-opacity-80 max-h-[5.6rem] py-3 border-b-[2px] border-[#323232]">
         <div className="container flex justify-between items-center">
           <a className="ltr:hidden" href="#">
             <img
@@ -99,7 +127,7 @@ const Nav = () => {
             </div>
           </div>
         </div>
-      </nav>
+      </motion.nav>
     </header>
   );
 };

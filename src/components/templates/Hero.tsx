@@ -20,7 +20,7 @@ const Hero = () => {
   const y2 = useTransform(scrollYProgress, [0, 0.2], [0, 150]);
 
   return (
-    <section className="container flex flex-col-reverse md:flex-row justify-between items-center my-10">
+    <section className="sm:overflow-hidden container flex flex-col-reverse md:flex-row justify-between items-center pt-28">
       <motion.div
         initial={{ x: 100, opacity: 0, scale: 0.8 }}
         whileInView={{ x: 0, opacity: 1, scale: 1 }}
@@ -60,7 +60,7 @@ const Hero = () => {
         style={{ y }}
         whileInView={{ x: 0, opacity: 1, scale: 1 }}
         transition={{ duration: 3, type: "spring" }}
-        className="relative">
+        className="overflow-hidden sm:overflow-visible relative ltr:!scale-x-[-1]">
         <HeroIcon
           icon={icon1}
           position="left-[10%] top-1/4"
@@ -87,7 +87,7 @@ const Hero = () => {
           title={t("editingAndVisual")}
         />
         <img src={hero} alt="hero image" />
-        <span className="absolute bottom-0 w-full h-1/3 bg-gradient-to-t from-black"></span>
+        <span className="absolute bottom-0 w-full h-1/3 bg-gradient-to-t from-black z-20"></span>
       </motion.div>
     </section>
   );

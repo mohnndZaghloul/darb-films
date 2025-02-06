@@ -12,14 +12,15 @@ import {
   youtube,
 } from "../../constants/images";
 import { IoMdMail } from "react-icons/io";
+import { useState } from "react";
 // import { useState } from "react";
 
 const Footer = () => {
-  // const [email, setEmail] = useState<string>("");
+  const [email, setEmail] = useState<string>("");
   const { t } = useTranslation();
 
   return (
-    <footer id="contact" className="border-t border-[#323232]">
+    <footer id="contact" className="capitalize border-t border-[#323232]">
       <div className="container justify-center grid grid-cols-2 sm:grid-cols-3 py-8">
         <div className="sm:mx-0">
           <h1 className="text-3xl p-5">{t("importantLinks")}</h1>
@@ -28,7 +29,7 @@ const Footer = () => {
               <a
                 className="relative group flex items-center gap-3 w-fit"
                 href="#services">
-                <IoIosArrowBack />
+                <IoIosArrowBack className="ltr:rotate-180" />
                 <span className="relative group py-1">
                   {t("ourServices")}
                   <span className="absolute bottom-0 start-0 h-[1px] w-full bg-white scale-0 group-hover:scale-100 transition"></span>
@@ -39,7 +40,7 @@ const Footer = () => {
               <a
                 className="relative group flex items-center gap-3 w-fit"
                 href="#">
-                <IoIosArrowBack />
+                <IoIosArrowBack className="ltr:rotate-180" />
                 <span className="relative group py-1">
                   {t("about")}
                   <span className="absolute bottom-0 start-0 h-[1px] w-full bg-white scale-0 group-hover:scale-100 transition"></span>
@@ -80,9 +81,9 @@ const Footer = () => {
             <li>
               <a
                 target="_blank"
-                className="flex items-center gap-3 p-4 border-y border-y-[#323232] w-fit"
+                className="flex items-center gap-3 py-4 border-y border-y-[#323232] w-fit"
                 href="mailto:Hello@darbproductions.com">
-                <IoMdMail />
+                <IoMdMail className="text-xl" />
                 <span dir="ltr" className="relative group py-1">
                   Hello@darbproductions.com
                   <span className="absolute bottom-0 start-0 h-[1px] w-full bg-white scale-0 group-hover:scale-100 transition"></span>
@@ -150,7 +151,7 @@ const Footer = () => {
             <p>{t("mediaProductionDepartment")}</p>
             <p>{t("darbProductionsSubsidiary")}</p>
           </div>
-          {/* <div className="text-lg my-8">
+          <div className="text-lg my-8">
             <p>{t("subscribe")}</p>
             <div className="overflow-hidden w-3/4 lg:w-2/3 2xl:w-1/2 mx-auto relative rounded-full my-2">
               <a
@@ -167,12 +168,12 @@ const Footer = () => {
                 placeholder={t("email")}
               />
             </div>
-          </div> */}
+          </div>
         </div>
       </div>
       <div className="text-black flex gap-4 px-10 py-2 bg-[#f2f2f2] font-medium">
         <p>الحقوق محفوظة</p>
-        <p>2024 درب برودكشنز</p>
+        <p>Mohannd Zaghloul 2025</p>
       </div>
     </footer>
   );

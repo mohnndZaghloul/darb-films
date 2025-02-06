@@ -19,7 +19,7 @@ const Portfolio = () => {
     offset: ["0 1", "1 1"],
   });
 
-  const y = useTransform(scrollYProgress, [0, 0.5], [100, 0]);
+  const y = useTransform(scrollYProgress, [0, 0.5], [150, 0]);
   const opacity = useTransform(scrollYProgress, [0, 0.5], [0, 1]);
 
   return (
